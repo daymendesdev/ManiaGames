@@ -6,11 +6,11 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #251B58;
     color: #333;
 }
 
-/* Estilos do Header e Navbar */
+/* Estilo do Header e da navbar */
 header {
     width: 100%;
     background-color: #1a1a1a;
@@ -31,7 +31,7 @@ header {
 }
 
 .logo img {
-    height: 50px;
+    height: 40px;
     transition: transform 0.3s ease;
 }
 
@@ -126,154 +126,6 @@ main {
     position: relative;
 }
 
-.texto-container {
-    flex: 1;
-    max-width: 600px;
-}
-
-.destaque-tag {
-    display: inline-block;
-    background-color: #ff6b00;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.texto-container h1 {
-    font-size: 4.5rem;
-    color: #1a1a1a;
-    margin-bottom: 1rem;
-    line-height: 1.1;
-    font-weight: 800;
-}
-
-.texto-container h2 {
-    font-size: 2.2rem;
-    color: #ff6b00;
-    margin-bottom: 2rem;
-    font-weight: 600;
-}
-
-.texto-container .descricao {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 2rem;
-}
-
-.destaques {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.destaque-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.destaque-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.destaque-item img {
-    width: 40px;
-    height: 40px;
-}
-
-.destaque-item span {
-    font-size: 0.9rem;
-    color: #666;
-    font-weight: 500;
-}
-
-.imagem-container {
-    flex: 1;
-    position: relative;
-    max-width: 600px;
-}
-
-.imagem-principal {
-    position: relative;
-    margin-bottom: 2rem;
-}
-
-.main-image {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.destaque-flutuante {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.destaque-flutuante-item {
-    text-align: center;
-}
-
-.destaque-flutuante-item .numero {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ff6b00;
-    margin-bottom: 0.5rem;
-}
-
-.destaque-flutuante-item .texto {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.mini-galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.mini-galeria img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.mini-galeria img:hover {
-    transform: scale(1.05);
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.btn-primary, .btn-secondary {
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
 .btn-primary {
     background-color: #ff6b00;
@@ -301,109 +153,48 @@ main {
 
 /* Estilos da seção Sobre Nós */
 .container-sobre {
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1400px;
-    margin: 4rem auto;
-    padding: 4rem 2rem;
-    gap: 4rem;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #251B58;
 }
 
 .texto-sobre {
-    flex: 1;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.texto-sobre h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff6b00;
 }
 
 .texto-sobre h2 {
-    font-size: 2.5rem;
-    color: #1a1a1a;
-    margin-bottom: 2rem;
-    font-weight: 700;
-}
-
-.texto-sobre .destaque {
-    font-size: 1.3rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 3rem;
-    font-weight: 500;
-}
-
-.caracteristicas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.caracteristica-item {
-    padding: 1.5rem;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.caracteristica-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.caracteristica-item h3 {
-    color: #ff6b00;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.caracteristica-item p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 .imagem-sobre {
-    flex: 1;
-    position: relative;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imagem-sobre img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.estatisticas {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 2rem;
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.estatistica-item {
-    text-align: center;
-    padding: 0 1rem;
-}
-
-.estatistica-item .numero {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ff6b00;
-    margin-bottom: 0.5rem;
-}
-
-.estatistica-item .texto {
-    font-size: 0.9rem;
-    color: #666;
+    object-fit: contain;
 }
 
 /* Media Queries para Responsividade */
@@ -529,6 +320,66 @@ main {
     .mini-galeria {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .container-sobre {
+        flex-direction: column;
+        padding: 4rem 1rem;
+    }
+
+    .texto-sobre, .imagem-sobre {
+        width: 100%;
+    }
+
+    .texto-sobre h1 {
+        font-size: 3rem;
+    }
+
+    .texto-sobre h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2C1F6E;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
+    }
+
+    .nav-list.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -560,12 +411,21 @@ main {
     .mini-galeria {
         grid-template-columns: 1fr;
     }
+
+    .texto-sobre h1 {
+        font-size: 2.5rem;
+    }
+
+    .texto-sobre h2 {
+        font-size: 1.2rem;
+    }
 }
 
 /* Estilos para a navegação Bootstrap */
 .navbar {
     background-color: #2C1F6E !important;
-    gap: 1rem 0;
+    padding: 1rem 0;
+    position: relative;
 }
 
 .nav-link {
@@ -729,7 +589,7 @@ main {
 }
 
 .logo img {
-    height: 30px;
+    height: 40px;
     transition: transform 0.3s ease;
 }
 
@@ -908,12 +768,11 @@ main {
         display: block;
     }
 
-    .btn-primary {
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto;
-    }
+   
 }
+
+
+/*responsividade*/
 
 @media screen and (max-width: 576px) {
     .container {
@@ -932,4 +791,21 @@ main {
         font-size: 0.85rem;
         padding: 0.3rem 0.8rem;
     }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*Responsividade aqui*/
+    
+}
+
+@media screen and (max-width: 480px) {
+  /*Responsividade aqui*/
+
 } 
