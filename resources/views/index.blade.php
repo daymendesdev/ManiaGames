@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mania Games</title>
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <link rel="icon" href="{{asset('image/favicon.png')}}">
 </head>
 <body>
     <nav class="navbar">
@@ -30,7 +31,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Avaliações</a>
+                    <a href="{{asset('avaliacoes.avaliacoes')}}" class="nav-link">Avaliações</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Festas</a>
