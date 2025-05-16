@@ -31,7 +31,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Avaliações</a>
+                    <a href="{{ route('avaliacoes') }}" class="nav-link">Avaliações</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Festas</a>

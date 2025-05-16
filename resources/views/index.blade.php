@@ -59,21 +59,21 @@
                                 </div>
                             </div>
                             <div class="carousel-slide">
-                                <img src="{{asset('image/4.jpg')}}" alt="Jogo 4">
+                                <img src="{{asset('image/15.jpg')}}" alt="Jogo 4">
                                 <div class="slide-content">
                                     <h3>Área kids</h3>
                                     <p>Contamos com uma área Kids para seu pequenino se divertir</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
-                                <img src="{{asset('image/5.jpg')}}" alt="Jogo 5">
+                                <img src="{{asset('image/45.jpg')}}" alt="Jogo 5">
                                 <div class="slide-content">
                                     <h3>Bate bate</h3>
                                     <p>lalala bate bate sei lá mais o que</p>
                                 </div>
                             </div>
                             <div class="carousel-slide">
-                                <img src="{{asset('image/6.jpg')}}" alt="Jogo 6">
+                                <img src="{{asset('image/70.jpg')}}" alt="Jogo 6">
                                 <div class="slide-content">
                                     <h3>Bate bate</h3>
                                     <p>lalala bate bate sei lá mais o que</p>
@@ -88,29 +88,55 @@
             </div>
         </section>
 
-        <!-- Seção de Recursos -->
-        <section class="features-section">
+        <!-- Seção de Festas -->
+        <section id="festas" class="games-section">
             <div class="container">
-                <h2>Por que escolher a Mania Games?</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <i class="fas fa-gamepad"></i>
-                        <h3>Jogos Exclusivos</h3>
-                        <p>Acesso a jogos exclusivos e conteúdo premium.</p>
+                <h2>Conheça Nossa Área para Festas</h2>
+                <p class="section-subtitle">Um espaço exclusivo e aconchegante para celebrar momentos especiais</p>
+                <a href="#contato" class="btn btn-festas">Agende sua Festa</a>
+                <div class="carousel-container">
+                    <button class="carousel-button prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="{{asset('image/15.jpg')}}" alt="Área de Festas 1">
+                                <div class="slide-content">
+                                    <h3>Espaço Amplo</h3>
+                                    <p>Ambiente climatizado com capacidade para até 100 pessoas</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="{{asset('image/88.jpg')}}" alt="Área de Festas 2">
+                                <div class="slide-content">
+                                    <h3>Decoração</h3>
+                                    <p>Decoração personalizada para cada tipo de celebração</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="{{asset('image/69.jpg')}}" alt="Área de Festas 3">
+                                <div class="slide-content">
+                                    <h3>Buffet</h3>
+                                    <p>Opções de buffet completo com cardápio personalizado</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="{{asset('image/66.jpg')}}" alt="Área de Festas 4">
+                                <div class="slide-content">
+                                    <h3>Entretenimento</h3>
+                                    <p>Diversas opções de jogos e atividades para todos os convidados</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <i class="fas fa-trophy"></i>
-                        <h3>Competições</h3>
-                        <p>Participe de torneios e ganhe prêmios.</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-users"></i>
-                        <h3>Comunidade</h3>
-                        <p>Faça parte de uma comunidade ativa de jogadores.</p>
-                    </div>
+                    <button class="carousel-button next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -132,10 +158,9 @@
                 <div class="footer-section">
                     <h3>Redes Sociais</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
             </div>
