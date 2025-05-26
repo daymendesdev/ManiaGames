@@ -77,7 +77,7 @@
 }
 
 .btn-submit {
-    background: #007bff;
+    background: #2C1F6E;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -90,7 +90,7 @@
 }
 
 .btn-submit:hover {
-    background: #0056b3;
+    background: #352583;
 }
 
 .success-message {
@@ -180,20 +180,6 @@
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .avaliacoes-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .avaliacoes-header h1 {
-        font-size: 2rem;
-    }
-    
-    .avaliacoes-form {
-        padding: 1.5rem;
-    }
-}
-
 .media-avaliacoes {
     margin: 2rem 0;
     text-align: center;
@@ -240,3 +226,96 @@
     font-size: 0.9rem;
     margin: 0;
 }
+
+.filtro-avaliacoes {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.filtro-form select {
+    padding: 0.8rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.filtro-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.paginacao {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.paginacao nav {
+    display: inline-block;
+}
+
+.paginacao .pagination {
+    display: flex;
+    gap: 0.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.paginacao .page-item {
+    display: inline-block;
+}
+
+.paginacao .page-link {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #2C1F6E;
+    border-radius: 3px;
+    color: #2C1F6E;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+    min-width: 25px;
+    text-align: center;
+}
+
+.paginacao .page-link:hover {
+    background-color: #2C1F6E;
+    color: white;
+}
+
+.paginacao .page-item.active .page-link {
+    background-color: #2C1F6E;
+    border-color: #2C1F6E;
+    color: white;
+}
+
+.paginacao .page-item.disabled .page-link {
+    color: #999;
+    border-color: #ddd;
+    pointer-events: none;
+    background-color: #f8f9fa;
+}
+
+/* Mostra apenas a página atual e as adjacentes */
+.paginacao .page-item:not(.active):not(:first-child):not(:last-child) {
+    display: none;
+}
+
+/* Ajusta o estilo dos botões de navegação */
+.paginacao .page-item:first-child .page-link,
+.paginacao .page-item:last-child .page-link {
+    padding: 0.2rem 0.4rem;
+    min-width: auto;
+    font-size: 0.8rem;
+}
+
+/* Remove os símbolos de seta */
+.paginacao .page-item:first-child .page-link::before,
+.paginacao .page-item:last-child .page-link::after {
+    content: none;
+}
+

@@ -6,6 +6,7 @@
     <title>@yield('title', 'Mania Games')</title>
     <link rel="stylesheet" href="{{ asset('css/menuApp.css') }}">
     <link rel="icon" href="{{ asset('image/favicon.png') }}">
+    @stack('styles')
 </head>
 <body>
     <nav class="navbar">
@@ -37,7 +38,7 @@
                     <a href="#" class="nav-link">Festas</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn-primary">Agendar</button>
+                    <a href="/ManiaGames/festas#agendar" class="btn-primary" id="btnAgendarMenu">Agendar</a>
                 </li>
             </ul>
         </div>
@@ -46,5 +47,7 @@
     @yield('content')
 
     <script src="{{ asset('js/menu.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @stack('scripts')
 </body>
 </html>

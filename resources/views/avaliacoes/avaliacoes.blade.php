@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
 <div class="avaliacoes-container">
+    <div class="avaliacoes-header">
+        <h1>Deixe sua avaliação</h1>
+    </div>
     @if(!session('avaliacao_enviada'))
     <div class="avaliacoes-form">
         <h2>Deixe sua Avaliação</h2>
@@ -24,8 +27,8 @@
                 <textarea id="avaliacao" name="avaliacao" required placeholder="Conte-nos como foi sua experiência na Mania Games..."></textarea>
             </div>
             <div class="form-group">
-                <label>Sua Nota</label>
-                <div class="rating">
+                <label>Quantas estrelas a Mania Games merece?</label>
+                <div class="rating">    
                     <input type="radio" name="nota" value="5" id="star5" required>
                     <label for="star5">★</label>
                     <input type="radio" name="nota" value="4" id="star4">
@@ -64,6 +67,16 @@
             </div>
         </div>
         <p>Veja o que nossos clientes estão falando sobre a Mania Games</p>
+        
+        <div class="filtro-avaliacoes">
+            <form action="{{ route('avaliacoes') }}" method="GET" class="filtro-form">
+                <select name="filtro_estrelas" onchange="this.form.submit()">
+                    <option value="">Todas as avaliações</option>
+                    <option value="alto" {{ request('filtro_estrelas') === 'alto' ? 'selected' : '' }}>4-5 estrelas</option>
+                    <option value="baixo" {{ request('filtro_estrelas') === 'baixo' ? 'selected' : '' }}>1-3 estrelas</option>
+                </select>
+            </form>
+        </div>
     </div>
 
     <div class="avaliacoes-grid">
@@ -83,6 +96,10 @@
             <span class="avaliacao-data">{{ $avaliacao->created_at->format('d/m/Y') }}</span>
         </div>
         @endforeach
+    </div>
+
+    <div class="paginacao">
+        {{ $avaliacoes->appends(request()->query())->links('pagination::simple-bootstrap-4') }}
     </div>
 </div>
 

@@ -8,9 +8,20 @@ use Illuminate\Http\Request;
 
 class AvaliacaoController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $avaliacoes = Avaliacao::orderBy('created_at', 'desc')->get();
+        $query = Avaliacao::query();
+        
+        // Aplicar filtro de estrelas se especificado
+        if ($request->has('filtro_estrelas')) {
+            if ($request->filtro_estrelas === 'alto') {
+                $query->whereBetween('nota', [4, 5]);
+            } elseif ($request->filtro_estrelas === 'baixo') {
+                $query->whereBetween('nota', [1, 3]);
+            }
+        }
+        
+        $avaliacoes = $query->orderBy('created_at', 'desc')->paginate(6);
         $mediaAvaliacoes = Avaliacao::avg('nota');
         $totalAvaliacoes = Avaliacao::count();
         
